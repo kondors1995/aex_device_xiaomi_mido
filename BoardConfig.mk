@@ -125,15 +125,7 @@ ENABLE_CPUSETS := true
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Dexpreopt
-ifeq ($(HOST_OS),linux)
-ifneq ($(TARGET_BUILD_VARIANT),userdebug)
 WITH_DEXPREOPT := true
-WITH_DEXPREOPT_DEBUG_INFO := false
-USE_DEX2OAT_DEBUG := false
-DONT_DEXPREOPT_PREBUILTS := true
-WITH_DEXPREOPT_PIC := true
-endif
-endif
 
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024

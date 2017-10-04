@@ -139,6 +139,9 @@ USE_OPENGL_RENDERER := true
 
 HWUI_COMPILE_FOR_PERF := true
 
+# Compile libhwui in performance mode
+HWUI_COMPILE_FOR_PERF := true
+
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true

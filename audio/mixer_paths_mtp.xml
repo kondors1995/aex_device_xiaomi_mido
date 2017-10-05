@@ -56,7 +56,7 @@
     <ctl name="COMP0 RX2" value="0" />
     <ctl name="RX1 Digital Volume" value="84" />
     <ctl name="RX2 Digital Volume" value="84" />
-    <ctl name="RX3 Digital Volume" value="78" />
+    <ctl name="RX3 Digital Volume" value="84" />
     <ctl name="IIR1 INP1 Volume" value="84" />
     <ctl name="IIR1 INP2 Volume" value="84" />
     <ctl name="IIR1 INP3 Volume" value="84" />
@@ -995,7 +995,6 @@
 
     <path name="speaker">
         <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="RX3 Digital Volume" value="84" />
         <ctl name="LINE_OUT" value="Switch" />
     </path>
 
@@ -1006,7 +1005,7 @@
 
     <path name="wsa-speaker">
         <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="RX3 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="78" />
         <ctl name="LINE_OUT" value="Switch" />
         <ctl name="SpkrMono WSA_RDAC" value="Switch" />
    </path>
@@ -1037,14 +1036,12 @@
    <path name="speaker-mic">
         <path name="adc1" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
-        <ctl name="DEC1 Volume" value="94" />
-        <ctl name="DEC2 Volume" value="94" />
    </path>
 
     <path name="handset">
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RDAC2 MUX" value="RX1" />
-        <ctl name="RX1 Digital Volume" value="86" />
+        <ctl name="RX1 Digital Volume" value="84" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
         <ctl name="EAR_S" value="Switch" />
     </path>
@@ -1052,8 +1049,6 @@
     <path name="handset-mic">
         <path name="adc1" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
-        <ctl name="DEC1 Volume" value="94" />
-        <ctl name="DEC2 Volume" value="94" />
     </path>
 
     <path name="headphones">
@@ -1072,8 +1067,6 @@
         <path name="adc2" />
         <ctl name="ADC2 MUX" value="INP2" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
-        <ctl name="DEC1 Volume" value="94" />
-        <ctl name="DEC2 Volume" value="94" />
     </path>
 
     <path name="sub-mic">
@@ -1107,9 +1100,7 @@
     </path>
 
     <path name="voice-speaker">
-        <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="RX3 Digital Volume" value="80" />
-        <ctl name="LINE_OUT" value="Switch" />
+        <path name="speaker" />
     </path>
 
     <path name="wsa-voice-speaker">
@@ -1190,8 +1181,6 @@
         <ctl name="DEC2 MUX" value="ADC2" />
         <ctl name="MI2S_TX Channels" value="Two" />
         <ctl name="ADC2 MUX" value="INP3" />
-        <ctl name="DEC1 Volume" value="93" />
-        <ctl name="DEC2 Volume" value="93" />
     </path>
 
     <path name="dmic-endfire">
@@ -1207,14 +1196,12 @@
     </path>
 
     <path name="voice-speaker-dmic-ef">
-        <ctl name="MI2S_TX Channels" value="Two" />
-        <ctl name="ADC3 Volume" value="6" />
+		<ctl name="MI2S_TX Channels" value="Two" />
+		<ctl name="ADC3 Volume" value="6" />
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="ADC1 Volume" value="6" />
         <ctl name="DEC2 MUX" value="ADC1" />
-        <ctl name="DEC1 Volume" value="90" />
-        <ctl name="DEC2 Volume" value="90" />
     </path>
 
     <path name="voice-rec-dmic-ef">
@@ -1239,8 +1226,6 @@
         <ctl name="DEC2 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="MI2S_TX Channels" value="Two" />
-        <ctl name="DEC1 Volume" value="90" />
-        <ctl name="DEC2 Volume" value="90" />
     </path>
 
     <path name="dmic-broadside">
